@@ -1,0 +1,22 @@
+<div [formGroup]="formGroup">
+  <div formGroupName="range">
+    <label>Min:</label>
+    <kendo-numerictextbox formControlName="filterMinVal"></kendo-numerictextbox>
+    <label>Max:</label>
+    <kendo-numerictextbox formControlName="filterMaxVal"></kendo-numerictextbox>
+    <input type="checkbox" formControlName="isRangeChecked" kendoCheckBox />
+  </div>
+
+  <div formGroupName="value">
+    <label>Individual Val:</label>
+    <kendo-numerictextbox formControlName="filterVal"></kendo-numerictextbox>
+    <input type="checkbox" formControlName="isValueChecked" kendoCheckBox />
+  </div>
+
+  <div formGroupName="values">
+    <label>MultipleVals Val:</label>
+    <kendo-numerictextbox formControlName="value1"></kendo-numerictextbox>
+    <kendo-numerictextbox formControlName="value2"></kendo-numerictextbox>
+    <input type="checkbox" formControlName="isValuesChecked" kendoCheckBox />
+  </div>
+</div>
